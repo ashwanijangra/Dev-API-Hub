@@ -1,0 +1,153 @@
+.req-tabs-bar{
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:10px 10px 0 0;
+    padding:0 8px;
+}
+
+.req-tabs-row{
+    display:flex;
+    align-items:center;
+    gap:6px;
+}
+
+.req-tabs-scroll{
+    display:flex;
+    align-items:center;
+    gap:2px;
+    overflow-x:auto;
+    scrollbar-width:thin;
+    flex:1;
+    min-width:0;
+}
+
+.req-tabs-side{
+    flex-shrink:0;
+}
+
+.req-tab{
+    position:relative;
+    display:flex;
+    align-items:center;
+    gap:8px;
+    padding:12px 10px 12px 14px;
+    background:transparent;
+    color:var(--text2);
+    font-size:13px;
+    cursor:pointer;
+    white-space:nowrap;
+    max-width:200px;
+    border-bottom:2px solid transparent;
+    transition:.15s;
+}
+
+.req-tab:hover{
+    color:var(--text);
+}
+
+.req-tab.active{
+    color:var(--text);
+    border-bottom-color:var(--accent);
+}
+
+.req-tab-method{
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:.2px;
+}
+
+.req-tab-name{
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    display:flex;
+    align-items:center;
+    gap:6px;
+    font-weight:500;
+}
+
+.req-tab-dot{
+    width:6px;
+    height:6px;
+    border-radius:50%;
+    background:var(--primary);
+    flex-shrink:0;
+}
+
+.req-tab-rename{
+    width:120px;
+    background:var(--card);
+    border:1px solid var(--primary);
+    border-radius:5px;
+    color:var(--text);
+    font-size:13px;
+    padding:3px 6px;
+    outline:none;
+}
+
+.req-tab-close{
+    border:none;
+    background:transparent;
+    color:var(--text3);
+    font-size:11px;
+    opacity:0;
+    padding:3px 5px;
+    border-radius:5px;
+    transition:.15s;
+}
+
+.req-tab:hover .req-tab-close,
+.req-tab.active .req-tab-close{
+    opacity:1;
+}
+
+.req-tab-close:hover{
+    background:var(--card2);
+    color:var(--m-delete);
+}
+
+.req-tab-menu{
+    position:absolute;
+    top:100%;
+    left:0;
+    margin-top:4px;
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:8px;
+    box-shadow:0 8px 24px rgba(17,24,39,.12);
+    z-index:20;
+    min-width:170px;
+    overflow:hidden;
+}
+
+.req-tab-menu button{
+    display:block;
+    width:100%;
+    text-align:left;
+    padding:10px 14px;
+    background:transparent;
+    border:none;
+    color:var(--text);
+    font-size:13px;
+}
+
+.req-tab-menu button:hover{
+    background:var(--card2);
+}
+
+.req-tab-add{
+    width:32px;
+    height:32px;
+    flex-shrink:0;
+    border:none;
+    background:transparent;
+    color:var(--text3);
+    font-size:18px;
+    border-radius:6px;
+    transition:.15s;
+}
+
+.req-tab-add:hover{
+    background:var(--card2);
+    color:var(--text);
+}

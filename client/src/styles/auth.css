@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap");
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:"Sora",sans-serif;
+  background:#0b0d11;
+}
+
+.auth-page{
+  display:flex;
+  min-height:100vh;
+  background:#0b0d11;
+}
+
+/* LEFT */
+
+.auth-left{
+  width:60%;
+  position:relative;
+
+  display:flex;
+  align-items:center;
+
+  padding:80px;
+
+  overflow:hidden;
+
+  background:#0b0d11;
+}
+
+.bg-grid{
+  position:absolute;
+  inset:0;
+
+  background-image:
+  linear-gradient(
+    rgba(255,255,255,.03) 1px,
+    transparent 1px
+  ),
+  linear-gradient(
+    90deg,
+    rgba(255,255,255,.03) 1px,
+    transparent 1px
+  );
+
+  background-size:40px 40px;
+}
+
+.auth-left::before{
+  content:"";
+
+  position:absolute;
+
+  width:500px;
+  height:500px;
+
+  background:
+  rgba(79,142,247,.18);
+
+  border-radius:50%;
+
+  filter:blur(140px);
+
+  top:-150px;
+  left:-120px;
+}
+
+.auth-left::after{
+  content:"";
+
+  position:absolute;
+
+  width:450px;
+  height:450px;
+
+  background:
+  rgba(124,58,237,.18);
+
+  border-radius:50%;
+
+  filter:blur(140px);
+
+  bottom:-100px;
+  right:-80px;
+}
+
+.auth-brand{
+  position:relative;
+  z-index:10;
+
+  max-width:650px;
+}
+
+.logo-box{
+  width:80px;
+  height:80px;
+
+  border-radius:20px;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  font-size:1.7rem;
+  font-weight:700;
+
+  color:white;
+
+  background:
+  linear-gradient(
+    135deg,
+    #4f8ef7,
+    #7c3aed
+  );
+
+  margin-bottom:35px;
+}
+
+.auth-brand h1{
+  color:white;
+
+  font-size:4rem;
+
+  line-height:1.1;
+
+  margin-bottom:20px;
+}
+
+.auth-brand p{
+  color:#94a3b8;
+
+  font-size:1.1rem;
+
+  line-height:1.8;
+
+  margin-bottom:40px;
+}
+
+/* API CARDS */
+
+.preview-cards{
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+
+  margin-bottom:35px;
+}
+
+.preview-card{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  padding:18px;
+
+  border-radius:14px;
+
+  background:
+  rgba(255,255,255,.04);
+
+  border:
+  1px solid rgba(255,255,255,.06);
+}
+
+.badge{
+  font-weight:700;
+}
+
+.get{
+  color:#22c55e;
+}
+
+.post{
+  color:#f59e0b;
+}
+
+/* FEATURES */
+
+.feature-grid{
+  display:grid;
+
+  grid-template-columns:
+  repeat(2,1fr);
+
+  gap:15px;
+}
+
+.feature-card{
+  padding:18px;
+
+  border-radius:14px;
+
+  background:
+  rgba(255,255,255,.04);
+
+  border:
+  1px solid rgba(255,255,255,.06);
+
+  color:white;
+}
+
+/* RIGHT */
+
+.auth-right{
+  width:40%;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  padding:40px;
+
+  background:#10131a;
+}
+
+.login-card{
+  width:100%;
+  max-width:460px;
+
+  padding:45px;
+
+  border-radius:24px;
+
+  background:#161b25;
+
+  border:1px solid #2a3348;
+
+  box-shadow:
+  0 30px 80px rgba(0,0,0,.45);
+}
+
+.mini-logo{
+  width:55px;
+  height:55px;
+
+  border-radius:14px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  color:white;
+  font-weight:700;
+
+  margin-bottom:20px;
+
+  background:
+  linear-gradient(
+    135deg,
+    #4f8ef7,
+    #7c3aed
+  );
+}
+
+.login-card h2{
+  color:white;
+  font-size:2rem;
+}
+
+.login-card p{
+  color:#7a8baa;
+
+  margin-top:10px;
+  margin-bottom:30px;
+}
+
+.login-card form{
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+
+.login-card input{
+  height:54px;
+
+  padding:0 16px;
+
+  border-radius:12px;
+
+  border:1px solid #2a3348;
+
+  background:#10131a;
+
+  color:white;
+
+  outline:none;
+}
+
+.login-card input:focus{
+  border-color:#4f8ef7;
+}
+
+.login-card button{
+  height:54px;
+
+  border:none;
+
+  border-radius:12px;
+
+  color:white;
+
+  font-weight:600;
+
+  cursor:pointer;
+
+  background:
+  linear-gradient(
+    135deg,
+    #4f8ef7,
+    #7c3aed
+  );
+}
+
+.bottom-link{
+  margin-top:25px;
+
+  text-align:center;
+
+  color:#7a8baa;
+}
+
+.bottom-link a{
+  margin-left:6px;
+
+  text-decoration:none;
+
+  color:#4f8ef7;
+}
+
+@media(max-width:1100px){
+
+  .auth-page{
+    flex-direction:column;
+  }
+
+  .auth-left,
+  .auth-right{
+    width:100%;
+  }
+
+  .auth-brand h1{
+    font-size:3rem;
+  }
+}
