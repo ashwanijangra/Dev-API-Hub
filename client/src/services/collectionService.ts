@@ -1,7 +1,6 @@
 import axios from "axios";
 
-const API_URL = "https://dev-api-hub-backend.onrender.com";
-
+const API_URL = "https://dev-api-hub-backend.onrender.com/api/collections";
 const getAuthHeader = () => ({
   headers: {
     Authorization: `Bearer ${localStorage.getItem("token")}`,

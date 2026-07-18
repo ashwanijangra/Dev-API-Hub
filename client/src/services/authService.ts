@@ -6,7 +6,7 @@ import type{
 } from "../types/authTypes";
 
 const API_URL =
-      "https://dev-api-hub-backend.onrender.com";
+      "https://dev-api-hub-backend.onrender.com/api/auth";
 
 export const registerUser = async (
   userData: RegisterData
