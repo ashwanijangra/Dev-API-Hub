@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api/history";
+const API_URL = "https://dev-api-hub-backend.onrender.com";
 
 export const saveHistory = async (data: any) => {
   const token = localStorage.getItem("token");

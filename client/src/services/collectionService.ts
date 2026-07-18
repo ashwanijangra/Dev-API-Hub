@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api/collections";
+const API_URL = "https://dev-api-hub-backend.onrender.com";
 
 const getAuthHeader = () => ({
   headers: {
